@@ -1,8 +1,7 @@
 import React from 'react'
 
 function Navbar({cartValue}) {
-  return <>
-  {/* <!-- Navigation--> */}
+    return <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
                 <a className="navbar-brand" href="javascript(void)">Start Bootstrap</a>
@@ -16,7 +15,7 @@ function Navbar({cartValue}) {
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a className="dropdown-item" href="javascript(void)">All Products</a></li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="javascript(void)">Popular Items</a></li>
+                                <li><a className="dropdown-item" href="javascript(void)" >Popular Items</a></li>
                                 <li><a className="dropdown-item" href="javascript(void)">New Arrivals</a></li>
                             </ul>
                         </li>
@@ -25,13 +24,13 @@ function Navbar({cartValue}) {
                         <button className="btn btn-outline-dark" type="submit">
                             <i className="bi-cart-fill me-1"></i>
                             Cart
-                            <span id="cart-val" className="badge bg-dark text-white ms-1 rounded-pill">{cartValue}</span>
+                            <span className="badge bg-dark text-white ms-1 rounded-pill">{cartValue}</span>
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
-      </>
+    </>
 }
 
 export default Navbar
